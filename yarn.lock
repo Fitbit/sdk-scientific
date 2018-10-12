@@ -61,7 +61,7 @@
     error-subclass "^2.2.0"
     tslib "^1.9.3"
 
-"@fitbit/sdk-cli@1.0.2":
+"@fitbit/sdk-cli@^1.0.2":
   version "1.0.2"
   resolved "https://artifacts.site-ops.fitbit.com:443/artifactory/api/npm/npm-virtual/@fitbit/sdk-cli/-/sdk-cli-1.0.2.tgz#3ea764eefe8f647189eec8d04423b956608dfb13"
   dependencies:
@@ -92,7 +92,7 @@
     vorpal "^1.12.0"
     websocket-stream "^5.1.2"
 
-"@fitbit/sdk@2.0.1":
+"@fitbit/sdk@~2.0.1":
   version "2.0.1"
   resolved "https://artifacts.site-ops.fitbit.com:443/artifactory/api/npm/npm-virtual/@fitbit/sdk/-/sdk-2.0.1.tgz#8dbcb7063f080b3be3d5cd3e66955b4c082751ac"
   dependencies:

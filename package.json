@@ -1,8 +1,6 @@
 {
   "name": "sdk-scientific",
   "version": "0.1.0",
-  "private": true,
-  "license": "UNLICENSED",
   "devDependencies": {
     "@fitbit/sdk": "~2.0.1",
     "@fitbit/sdk-cli": "^1.0.2"
@@ -18,7 +16,8 @@
       "higgs",
       "meson"
     ],
-    "i18n": {}
+    "i18n": {},
+    "enableProposedAPI": true
   },
   "scripts": {
     "build": "fitbit-build",

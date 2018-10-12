@@ -1,3 +1,5 @@
 <svg>
-  <rect id="background" />
+  <circle id="disc1" />
+  <circle id="disc2" />
+  <circle id="disc3" />
 </svg>
