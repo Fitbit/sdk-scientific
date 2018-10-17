@@ -1,7 +1,6 @@
 import { me as device } from "device";
-if (!device.screen) device.screen = { width: 348, height: 250 };
 
-export class Disc {
+export default class Disc {
   constructor(ele, radius, color) {
     this.elem = ele;
     this.radius = radius;
@@ -13,14 +12,12 @@ export class Disc {
     this.elem.r = this.radius;
     this.vx = 0;
     this.vy = 0;
-    this.ax = 0;
-    this.ay = 0;
   }
-  reposition() {
-    this.ax *= -1; //flip x
+  reposition(ax, ay) {
+    ax *= -1; //flip x
 
-    this.vx = this.vx + this.ax;
-    this.vy = this.vy + this.ay;
+    this.vx = this.vx + ax;
+    this.vy = this.vy + ay;
 
     this.y = parseInt(this.y + this.vy);
     this.x = parseInt(this.x + this.vx);
