@@ -1,7 +1,7 @@
 import { Accelerometer } from "accelerometer";
 import { display } from "display";
 import document from "document";
-import { mean }from "scientific";
+import { mean } from "scientific";
 import { LinearFilter } from "scientific/signal";
 
 import Disc from "./disc";
