@@ -30,19 +30,22 @@ const accel = new Accelerometer({ frequency: 100, batch: 10 });
 
 accel.onreading = () => {
   // Unfiltered, raw reading
-  let ax1 = accel.readings.x[0];
-  let ay1 = accel.readings.y[0];
-  disc1.reposition(ax1, ay1);
+  disc1.reposition(
+    accel.readings.x[0],
+    accel.readings.y[0]
+  );
 
   // Unfiltered, averaged reading
-  let ax2 = mean(accel.readings.x);
-  let ay2 = mean(accel.readings.y);
-  disc2.reposition(ax2, ay2);
+  disc2.reposition(
+    mean(accel.readings.x),
+    mean(accel.readings.y)
+  );
 
   // Filtered reading
-  let ax3 = filter5hzX.update(accel.readings.x)[0];
-  let ay3 = filter5hzY.update(accel.readings.y)[0];
-  disc3.reposition(ax3, ay3);
+  disc3.reposition(
+    filter5hzX.update(accel.readings.x)[0],
+    filter5hzY.update(accel.readings.y)[0]
+  );
 };
 
 accel.start();
