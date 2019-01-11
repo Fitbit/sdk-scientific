@@ -2,8 +2,8 @@
   "name": "sdk-scientific",
   "version": "0.1.0",
   "devDependencies": {
-    "@fitbit/sdk": "~2.0.1",
-    "@fitbit/sdk-cli": "^1.0.2"
+    "@fitbit/sdk": "~3.0.0",
+    "@fitbit/sdk-cli": "^1.5.0"
   },
   "fitbit": {
     "appUUID": "23e789ce-a8c8-4a0f-82ec-7fa74137f6cd",
@@ -17,7 +17,6 @@
       "meson"
     ],
     "i18n": {},
-    "enableProposedAPI": true
   },
   "scripts": {
     "build": "fitbit-build",
